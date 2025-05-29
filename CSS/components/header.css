@@ -19,6 +19,7 @@ header .header__left p {
 
 header .header__right .header__image{
     position: relative;
+    display: inline-block;
     line-height: 0;
 }
 
@@ -38,4 +39,12 @@ header .header__right .header__image::after{
 header .header__right .header__image .rui{
     border-radius: 0.5rem;
     min-width: 25rem;
+    max-width: 100%;
+}
+
+header .header__right .header__image .background{
+    position: absolute;
+    top: -4rem;
+    right: -2.5rem;
+    z-index: -1;
 }
